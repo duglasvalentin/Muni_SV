@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Reposteria</title>
+        <link rel="icon" type="image/x-icon" href="../resources/img/640px-Escudo_de_San_vicente.ico" />
+    </h:head>
+
+    <h:body>
+
+        <h1 align="center">Taller de Reposteria</h1>  
+        <h2>Datos de los Jovenes a Ingresar:</h2><a href="../index.xhtml">INICIO</a>
+        <br />
+        <h:form> 
+            <h:panelGrid columns="2">  
+                <p:outputLabel value="DNI"/>  
+                <p:inputText value=""/> 
+                <p:outputLabel value="Nombres"/>
+                <p:inputText value=""/>    
+                <p:outputLabel value="Apellidos"/>
+                <p:inputText value=""/>
+                <p:outputLabel value="Taller"/>
+
+                <p:inputText value="Resposteria"/>
+                <p:outputLabel value="Fecha"/>
+                <p:calendar id="popup" value="#{calendarView.date23}" />
+                <p:outputLabel value="Asistencia"/>
+                <p:selectOneRadio id="console" value="#{radioView.console3}" style="width:180px">
+                    <f:selectItem itemLabel="Si" />
+                    <f:selectItem itemLabel="No" />
+                </p:selectOneRadio>
+                <p:outputLabel value="Encargad@"/>                             
+                <p:inputText value="Manuel Cortes"/>
+                <p:outputLabel value="Apreciación"/>
+                <p:inputText value=""/>
+                <p:commandButton value="Registrar"/>
+            </h:panelGrid>
+
+            <h2>Taller de Reposteria</h2>
+            <table border="1">
+                <tr bgcolor="red">
+                    <th>DNI</th>
+                    <th>Nombres</th>
+                    <th>Apellidos</th>
+                    <th>Taller</th>
+                    <th>Fecha</th>
+                    <th>Asistencia</th> 
+                    <th>Encargad@</th>
+                    <th>Apreciación</th>
+                    <th>%%</th>
+                </tr>
+                <tr>
+                    <td>77284596</td>
+                    <td>Manuel Andres</td>
+                    <td>Palomino Fugaz</td>
+                    <td>Reposteria</td>
+                    <td>05/10/18</td>
+                    <td>Si</td>    
+                    <td>Ana Maria Rojas</td>
+                    <td>Tiene interes en el taller</td> 
+                    <TD>1/1</TD>
+                </tr>
+                <tr>
+                    <td>89654785</td>
+                    <td>Jorge Manuel</td>
+                    <td>Cuzcano de la Cruz</td>
+                    <td>Reposteria</td>
+                    <td>05/10/18</td>
+                    <td>No</td> 
+                    <td>Ana Maria Rojas</td>
+                    <td>No tiene interes en el taller</td>
+                    <TD>0/1</TD>
+                </tr>
+                <tr>
+                    <td>77284596</td>
+                    <td>Manuel Andres</td>
+                    <td>Palomino Fugaz</td>
+                    <td>Reposteria</td>
+                    <td>05/10/18</td>
+                    <td>Si</td>    
+                    <td>Ana Maria Rojas</td>                  
+                    <td>Tiene interes en el taller</td> 
+                    <TD>2/2</TD>
+                </tr>
+                <tr>
+                    <td>89654785</td>
+                    <td>Jorge Manuel</td>
+                    <td>Cuzcano de la Cruz</td>
+                    <td>Reposteria</td>
+                    <td>05/10/18</td>
+                    <td>No</td> 
+                    <td>Ana Maria Rojas</td>
+                    <td>No tiene interes en el taller</td> 
+                    <TD>0/2</TD>
+                </tr>
+
+
+            </table>
+
+        </h:form>
+
+    </h:body>
+</html>
+
